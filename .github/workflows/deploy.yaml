@@ -14,5 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v2
-      - run: curl https://cli-assets.heroku.com/install.sh | sh
+      - name: Check Out Repo
+        uses: actions/checkout@v2
+      - name: Release Grafana Agent
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: grafana-agent
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          usedocker: true
