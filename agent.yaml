@@ -19,4 +19,4 @@ prometheus:
         - url: https://prometheus-prod-10-prod-us-central-0.grafana.net/api/prom/push
           basic_auth:
             username: 197015
-            password: eyJrIjoiYWMyMDE5MzkyNmY4OTFkOWYwMWUwNmM3MjhmZTU5ODhlMWIwNThjMSIsIm4iOiJoZXJva3UiLCJpZCI6NTM4NDExfQ==
+            password: ${GRAFANA_API_KEY}

@@ -23,3 +23,5 @@ jobs:
           heroku_app_name: grafana-agent
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
           usedocker: true
+        env:
+          GRAFANA_API_KEY: ${{ secrets.GRAFANA_API_KEY }}
