@@ -24,4 +24,4 @@ jobs:
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
           usedocker: true
         env:
-          GRAFANA_API_KEY: ${{ secrets.GRAFANA_API_KEY }}
+          HD_GRAFANA_API_KEY: ${{ secrets.GRAFANA_API_KEY }}
