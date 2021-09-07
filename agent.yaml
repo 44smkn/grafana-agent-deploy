@@ -1,6 +1,6 @@
 server:
   log_level: info
-  http_listen_port: 80
+  http_listen_port: ${PORT}
 
 prometheus:
   global:
